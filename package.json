@@ -1,0 +1,19 @@
+{
+  "workspaces": [
+    "site",
+    "woocommerce/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --filter=next-ecommerce...",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "types": "turbo run types",
+    "prettier-fix": "prettier --write ."
+  },
+  "dependencies": {
+    "husky": "^8.0.1"
+  },
+  "devDependencies": {
+    "turbo": "^1.4.0"
+  }
+}
